@@ -113,6 +113,14 @@ namespace NFe.Servicos
                 ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
         }
 
+        public X509Certificate2 PegarCertificado
+        {
+            get
+            {
+                return this._certificado;
+            }            
+        }
+
         private string SalvarArquivoXml(string nomeArquivo, string xmlString)
         {
             if (!_cFgServico.SalvarXmlServicos) return null;

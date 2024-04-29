@@ -72,13 +72,6 @@ namespace NFe.Classes.Informacoes.Transporte
         public List<reboque> reboque { get; set; }
 
         /// <summary>
-        ///     X26 - Grupo Volumes
-        ///     <para>Ocorrência: 0-5000</para>
-        /// </summary>
-        [XmlElement("vol")]
-        public List<vol> vol { get; set; }
-
-        /// <summary>
         ///     X25a - Identificação do vagão
         /// </summary>
         public string vagao { get; set; }
@@ -87,5 +80,14 @@ namespace NFe.Classes.Informacoes.Transporte
         ///     X25b - Identificação da balsa
         /// </summary>
         public string balsa { get; set; }
+
+        /// <summary>
+        ///     X26 - Grupo Volumes
+        ///     <para>Ocorrência: 0-5000</para>
+        /// </summary>
+
+        [XmlElement("vol")]
+        public List<vol> vol { get; set; }
+
     }
 }
