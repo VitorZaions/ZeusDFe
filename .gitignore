@@ -19,12 +19,12 @@ NFe.sln.DotSettings.user
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
+#[Rr]elease/
+#[Rr]eleases/
+#x64/
+#x86/
 bld/
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
 [Ll]og/
 
@@ -43,7 +43,7 @@ TestResult.xml
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
-[Rr]eleasePS/
+#[Rr]eleasePS/
 dlldata.c
 
 # .NET Core
@@ -195,7 +195,7 @@ _pkginfo.txt
 !*.[Cc]ache/
 
 # Others
-ClientBin/
+#ClientBin/
 ~$*
 *~
 *.dbmdl
@@ -279,8 +279,21 @@ __pycache__/
 # !tools/packages.config
 
 ### VisualStudio Patch ###
-build/
+#build/
 
 # End of https://www.gitignore.io/api/visualstudio
-*.dll
-/Bredas.SharedKernel/novo.sql
+# Ignore todas as DLLs
+#*.dll
+
+# Ignorar arquivos específicos
+**/Bredas.SharedKernel/novo.sql
+
+# Exceto as DLLs específicas
+!**/DFe.Utils.dll
+!**/DFe.Classes.dll
+!**/NFe.Classes.dll
+!**/NFe.Danfe.Base.dll
+!**/NFe.Danfe.Fast.dll
+!**/NFe.Servicos.dll
+!**/NFe.Utils.dll
+!**/NFe.Wsdl.dll

@@ -1,0 +1,181 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "NFe.Danfe.App.Teste.Html/1.0.0": {
+        "dependencies": {
+          "NFe.Danfe.Html": "1.0.0",
+          "Zeus.Net.NFe.NFCe": "2024.1.15.1723"
+        },
+        "runtime": {
+          "NFe.Danfe.App.Teste.Html.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "NetBarcode/1.7.0": {
+        "dependencies": {
+          "SixLabors.Fonts": "1.0.0-beta17",
+          "SixLabors.ImageSharp": "2.1.1",
+          "SixLabors.ImageSharp.Drawing": "1.0.0-beta14"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetBarcode.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.Fonts/1.0.0-beta17": {
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/2.1.1": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp.Drawing/1.0.0-beta14": {
+        "dependencies": {
+          "SixLabors.Fonts": "1.0.0-beta17",
+          "SixLabors.ImageSharp": "2.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.Drawing.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
+      "System.Text.Encoding.CodePages/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
+        }
+      },
+      "Zeus.Net.NFe.NFCe/2024.1.15.1723": {
+        "runtime": {
+          "lib/net6.0/DFe.Classes.dll": {
+            "assemblyVersion": "2024.1.15.1723",
+            "fileVersion": "2024.1.15.1723"
+          },
+          "lib/net6.0/DFe.Utils.dll": {
+            "assemblyVersion": "2024.1.15.1723",
+            "fileVersion": "2024.1.15.1723"
+          },
+          "lib/net6.0/DFe.Wsdl.dll": {
+            "assemblyVersion": "2024.1.15.1723",
+            "fileVersion": "2024.1.15.1723"
+          },
+          "lib/net6.0/NFe.Classes.dll": {
+            "assemblyVersion": "2024.1.15.1723",
+            "fileVersion": "2024.1.15.1723"
+          },
+          "lib/net6.0/NFe.Servicos.dll": {
+            "assemblyVersion": "2024.1.15.1723",
+            "fileVersion": "2024.1.15.1723"
+          },
+          "lib/net6.0/NFe.Utils.dll": {
+            "assemblyVersion": "2024.1.15.1723",
+            "fileVersion": "2024.1.15.1723"
+          },
+          "lib/net6.0/NFe.Wsdl.Standard.dll": {
+            "assemblyVersion": "2024.1.15.1723",
+            "fileVersion": "2024.1.15.1723"
+          }
+        }
+      },
+      "NFe.Danfe.Html/1.0.0": {
+        "dependencies": {
+          "NetBarcode": "1.7.0",
+          "Zeus.Net.NFe.NFCe": "2024.1.15.1723"
+        },
+        "runtime": {
+          "NFe.Danfe.Html.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NFe.Danfe.App.Teste.Html/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "NetBarcode/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R472CY4pyyW7YrIl/8c2NvGQY7/Fbv3WfVHonuKBOHNQkkIPkuo09ZBkrwOF9hXmDTMvJuoUcpQ5ShG0dMhvkg==",
+      "path": "netbarcode/1.7.0",
+      "hashPath": "netbarcode.1.7.0.nupkg.sha512"
+    },
+    "SixLabors.Fonts/1.0.0-beta17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qubgVovAoSR7vyv9tJ68gSzRIPWz7HBjTM9rwAaLjpcJ6T50arnX+GHAZcC0r2mVagyRMknCNda3DGoe8StUUQ==",
+      "path": "sixlabors.fonts/1.0.0-beta17",
+      "hashPath": "sixlabors.fonts.1.0.0-beta17.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oNHMT8+yUR9dyuU2r7fwsXvvS4OnfCs9N5i2y2p9iBxp3nvEZbe/hZWrOGfD7MX2lxOAlWzlhzj0q2uFwP8avg==",
+      "path": "sixlabors.imagesharp/2.1.1",
+      "hashPath": "sixlabors.imagesharp.2.1.1.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp.Drawing/1.0.0-beta14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2mFbk5s9iu8fWiWyhbMo8VwHst2cw8LACQe36Fn6hlXkUwCEkyGVvdcdtHPQru7ESSnziW47Lt7Jkoay55RBcQ==",
+      "path": "sixlabors.imagesharp.drawing/1.0.0-beta14",
+      "hashPath": "sixlabors.imagesharp.drawing.1.0.0-beta14.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
+      "path": "system.text.encoding.codepages/5.0.0",
+      "hashPath": "system.text.encoding.codepages.5.0.0.nupkg.sha512"
+    },
+    "Zeus.Net.NFe.NFCe/2024.1.15.1723": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X+FUByEITRTMMLiGwifJ5nO6FAG9lMxB1ScJyBzYq3yIybr/rJWy2ZdQ5UGUwz30EkUOHd0QMht1ztgvWC3Qdg==",
+      "path": "zeus.net.nfe.nfce/2024.1.15.1723",
+      "hashPath": "zeus.net.nfe.nfce.2024.1.15.1723.nupkg.sha512"
+    },
+    "NFe.Danfe.Html/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
