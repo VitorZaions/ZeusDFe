@@ -30,73 +30,72 @@
 /* http://www.zeusautomacao.com.br/                                             */
 /* Rua Comendador Francisco josé da Cunha, 111 - Itabaiana - SE - 49500-000     */
 /********************************************************************************/
-using System;
+
 using System.IO;
-using System.Xml;
 using CTe.Classes;
-using CTe.Classes.Servicos.Consulta;
-using CTe.Classes.Servicos.Tipos;
-using CTe.Utils.Validacao;
 using DFe.Utils;
+using cteOSProc = CTe.Classes.cteOSProc;
 
-namespace CTe.Utils.Extencoes
+namespace CTe.Utils.CTe
 {
-    public static class ExtconsSitCTe
+    public static class ExtCteOSProc
     {
-
-        public static void ValidarSchema(this consSitCTe consSitCTe, ConfiguracaoServico configuracaoServico = null)
+        /// <summary>
+        ///     Carrega um arquivo XML para um objeto da classe cteOSProc
+        /// </summary>
+        /// <param name="cteOSProc"></param>
+        /// <param name="arquivoXml">arquivo XML</param>
+        /// <returns>Retorna um cteOSProc carregada com os dados do XML</returns>
+        public static cteOSProc CarregarDeArquivoXml(this cteOSProc cteOSProc, string arquivoXml)
         {
-            var configServico = configuracaoServico ?? ConfiguracaoServico.Instancia;
-
-            var xmlValidacao = consSitCTe.ObterXmlString();
-
-            switch (consSitCTe.versao)
-            {
-                case versao.ve200:
-                    Validador.Valida(xmlValidacao, "consSitCTe_v2.00.xsd", configServico);
-                    break;
-                case versao.ve300:
-                    Validador.Valida(xmlValidacao, "consSitCTe_v3.00.xsd", configServico);
-                    break;
-                case versao.ve400:
-                    Validador.Valida(xmlValidacao, "consSitCTe_v4.00.xsd", configServico);
-                    break;
-                default:
-                    throw new InvalidOperationException("Nos achamos um erro na hora de validar o schema, " +
-                                                        "a versão está inválida, somente é permitido " +
-                                                        "versão 2.00 é 3.00");
-            }
+            return FuncoesXml.ArquivoXmlParaClasse<cteOSProc>(arquivoXml);
         }
 
         /// <summary>
-        ///     Converte o objeto consSitCTe para uma string no formato XML
+        ///     Converte o objeto cteOSProc para uma string no formato XML
         /// </summary>
-        /// <param name="pedConsulta"></param>
-        /// <returns>Retorna uma string no formato XML com os dados do objeto consSitCTe</returns>
-        public static string ObterXmlString(this consSitCTe pedConsulta)
+        /// <param name="cteOSProc"></param>
+        /// <returns>Retorna uma string no formato XML com os dados do cteOSProc</returns>
+        public static string ObterXmlString(this cteOSProc cteOSProc)
         {
-            return FuncoesXml.ClasseParaXmlString(pedConsulta);
+            return FuncoesXml.ClasseParaXmlString(cteOSProc);
         }
 
-        public static void SalvarXmlEmDisco(this consSitCTe statuServCte, ConfiguracaoServico configuracaoServico = null)
+        /// <summary>
+        ///     Coverte uma string XML no formato cteOSProc para um objeto cteOSProc
+        /// </summary>
+        /// <param name="cteOSProc"></param>
+        /// <param name="xmlString"></param>
+        /// <returns>Retorna um objeto do tipo cteOSProc</returns>
+        public static cteOSProc CarregarDeXmlString(this cteOSProc cteOSProc, string xmlString)
         {
+            var s = FuncoesXml.ObterNodeDeStringXml(typeof(cteOSProc).Name, xmlString);
+            return FuncoesXml.XmlStringParaClasse<cteOSProc>(s);
+        }
+
+        /// <summary>
+        ///     Grava os dados do objeto cteOSProc em um arquivo XML
+        /// </summary>
+        /// <param name="cteOSProc">Objeto cteOSProc</param>
+        /// <param name="arquivoXml">Diretório com nome do arquivo a ser gravado</param>
+        public static void SalvarArquivoXml(this cteOSProc cteOSProc, string arquivoXml)
+        {
+            FuncoesXml.ClasseParaArquivoXml(cteOSProc, arquivoXml);
+        }
+
+        public static void SalvarXmlEmDisco(this cteOSProc cteOSProc, ConfiguracaoServico configuracaoServico = null)
+        {
+            if (cteOSProc == null) return;
+
             var instanciaServico = configuracaoServico ?? ConfiguracaoServico.Instancia;
 
             if (instanciaServico.NaoSalvarXml()) return;
 
             var caminhoXml = instanciaServico.DiretorioSalvarXml;
 
-            var arquivoSalvar = Path.Combine(caminhoXml, "-ped-sit.xml");
+            var arquivoSalvar = Path.Combine(caminhoXml, cteOSProc.CTeOS.Chave() + "-cteOSProc.xml");
 
-            FuncoesXml.ClasseParaArquivoXml(statuServCte, arquivoSalvar);
-        }
-
-        public static XmlDocument CriaRequestWs(this consSitCTe consStatServMdFe)
-        {
-            var request = new XmlDocument();
-            request.LoadXml(consStatServMdFe.ObterXmlString());
-
-            return request;
+            FuncoesXml.ClasseParaArquivoXml(cteOSProc, arquivoSalvar);
         }
     }
 }
