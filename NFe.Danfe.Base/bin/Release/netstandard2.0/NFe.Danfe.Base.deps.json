@@ -136,7 +136,10 @@
       },
       "DFe.Classes/1.0.0": {
         "runtime": {
-          "DFe.Classes.dll": {}
+          "DFe.Classes.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DFe.Utils/1.0.0": {
@@ -145,7 +148,10 @@
           "System.Security.Cryptography.Xml": "6.0.1"
         },
         "runtime": {
-          "DFe.Utils.dll": {}
+          "DFe.Utils.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NFe.Classes/1.0.0": {
@@ -153,7 +159,10 @@
           "DFe.Utils": "1.0.0"
         },
         "runtime": {
-          "NFe.Classes.dll": {}
+          "NFe.Classes.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NFe.Utils/1.0.0": {
@@ -162,7 +171,10 @@
           "NFe.Classes": "1.0.0"
         },
         "runtime": {
-          "NFe.Utils.dll": {}
+          "NFe.Utils.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

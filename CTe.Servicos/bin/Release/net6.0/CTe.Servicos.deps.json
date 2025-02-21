@@ -446,7 +446,10 @@
           "DFe.Utils": "1.0.0"
         },
         "runtime": {
-          "CTe.Classes.dll": {}
+          "CTe.Classes.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "CTe.Utils/1.0.0": {
@@ -455,7 +458,10 @@
           "DFe.Utils": "1.0.0"
         },
         "runtime": {
-          "CTe.Utils.dll": {}
+          "CTe.Utils.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "CTe.Wsdl/1.0.0": {
@@ -463,12 +469,18 @@
           "DFe.Wsdl": "1.0.0"
         },
         "runtime": {
-          "CTe.Wsdl.dll": {}
+          "CTe.Wsdl.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DFe.Classes/1.0.0": {
         "runtime": {
-          "DFe.Classes.dll": {}
+          "DFe.Classes.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DFe.Utils/1.0.0": {
@@ -477,7 +489,10 @@
           "System.Security.Cryptography.Xml": "6.0.1"
         },
         "runtime": {
-          "DFe.Utils.dll": {}
+          "DFe.Utils.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DFe.Wsdl/1.0.0": {
@@ -487,7 +502,10 @@
           "System.Net.Http": "4.3.4"
         },
         "runtime": {
-          "DFe.Wsdl.dll": {}
+          "DFe.Wsdl.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

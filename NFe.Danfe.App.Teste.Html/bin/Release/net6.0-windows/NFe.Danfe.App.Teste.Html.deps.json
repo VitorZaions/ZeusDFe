@@ -105,7 +105,10 @@
           "Zeus.Net.NFe.NFCe": "2024.1.15.1723"
         },
         "runtime": {
-          "NFe.Danfe.Html.dll": {}
+          "NFe.Danfe.Html.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

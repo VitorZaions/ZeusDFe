@@ -50,7 +50,10 @@
       },
       "DFe.Classes/1.0.0": {
         "runtime": {
-          "DFe.Classes.dll": {}
+          "DFe.Classes.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
